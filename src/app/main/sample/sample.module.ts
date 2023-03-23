@@ -9,6 +9,10 @@ import { ContentHeaderModule } from 'app/layout/components/content-header/conten
 import { SampleComponent } from './sample.component'
 import { HomeComponent } from './home.component'
 
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 const routes = [
   {
     path: 'sample',
@@ -22,7 +26,14 @@ const routes = [
 
 @NgModule({
   declarations: [SampleComponent, HomeComponent],
-  imports: [RouterModule.forChild(routes), ContentHeaderModule, TranslateModule, CoreCommonModule],
+  imports: [
+    RouterModule.forChild(routes), 
+    ContentHeaderModule, 
+    TranslateModule, 
+    CoreCommonModule,
+    NgxSliderModule,
+    MatSlideToggleModule
+  ],
   exports: [SampleComponent, HomeComponent]
 })
 export class SampleModule {}

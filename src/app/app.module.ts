@@ -19,6 +19,8 @@ import { AppComponent } from 'app/app.component'
 import { LayoutModule } from 'app/layout/layout.module'
 import { SampleModule } from 'app/main/sample/sample.module'
 
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+
 const appRoutes: Routes = [
   {
     path: 'pages',
@@ -59,7 +61,8 @@ const appRoutes: Routes = [
 
     // App modules
     LayoutModule,
-    SampleModule
+    SampleModule,
+    NgxSliderModule
   ],
 
   bootstrap: [AppComponent]

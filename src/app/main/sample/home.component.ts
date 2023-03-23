@@ -1,3 +1,4 @@
+import { Options } from '@angular-slider/ngx-slider';
 import { Component, OnInit } from '@angular/core'
 
 @Component({
@@ -9,6 +10,12 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   public contentHeader: object
+
+  value: number = 100;
+  options: Options = {
+    floor: 0,
+    ceil: 200
+  };
 
   // Lifecycle Hooks
   // -----------------------------------------------------------------------------------------------------
